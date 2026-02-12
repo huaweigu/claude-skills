@@ -1,5 +1,0 @@
-{
-  "name": "publish-report",
-  "description": "Generate a styled HTML report from a Jupyter notebook or markdown + PNGs and publish it to GitHub Pages",
-  "version": "1.0.0"
-}

@@ -1,6 +1,7 @@
 ---
 name: publish-report
 description: Generate a styled HTML report from a Jupyter notebook or markdown + PNGs and publish it to GitHub Pages
+argument-hint: "[html|deploy|deploy <repo-name>]"
 ---
 
 # Publish Report
