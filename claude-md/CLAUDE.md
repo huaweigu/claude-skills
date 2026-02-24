@@ -72,6 +72,13 @@ Only after explicit plan approval, implement in a single comprehensive pass.
 - For complex problems, throw more compute at it via subagents
 - One task per subagent for focused execution
 
+### Context Engineering
+
+- **Place critical instructions at the start or end of context** - never bury important details in the middle (attention follows a U-shaped curve; middle content gets 10-40% lower recall)
+- **Observation masking** - When tool outputs exceed ~2K tokens, write results to a file and reference the file path instead of keeping the full output in context
+- **Compaction trigger** - When context is at 70-80% utilization, proactively summarize earlier work into structured summaries (session intent, files modified, decisions made, next steps) before hitting limits
+- **Filesystem over message passing for coordination** - When using subagents, prefer writing results to files and reading them directly rather than passing through message chains (avoids the "telephone game" where intermediaries paraphrase and lose fidelity)
+
 ### Self-Improvement Loop
 
 - After ANY correction from the user: update `tasks/lessons.md` with the pattern
