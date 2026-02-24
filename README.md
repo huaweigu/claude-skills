@@ -8,6 +8,7 @@ A collection of custom skills for [Claude Code](https://claude.com/claude-code).
 |-------|-------------|
 | [publish-report](./publish-report/) | Generate a styled HTML report from a Jupyter notebook or markdown + PNGs and publish it to GitHub Pages |
 | [pdd-review](./pdd-review/) | Run a 9-agent review team on a Product Design Document (PDD) with per-agent verdicts and actionable synthesis |
+| [claude-md](./claude-md/) | Opinionated CLAUDE.md guidelines covering workflow orchestration, subagent strategy, self-improvement loops, and quality gates |
 
 ## Installation
 
